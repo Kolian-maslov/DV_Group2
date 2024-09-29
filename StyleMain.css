@@ -11,20 +11,17 @@ body {
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
-    font-family: "Gals";
+    font-family: 'Gals-Light';
 }
 
 @font-face {
-    font-family: "Gals";
-    src: url("gals.eot");
-    src: url("gals.eot?#iefix") format("embedded-opentype"),
-        url("gals.otf") format("opentype"),
-        url("gals.svg") format("svg"),
-        url("gals.ttf") format("truetype"),
-        url("gals.woff") format("woff"),
-        url("gals.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Gals-Light';
+	src: url('Gals-Light.eot'); /* IE 9 Compatibility Mode */
+	src: url('Gals-Light.eot') format('embedded-opentype'), /* IE < 9 */
+		url('Gals-Light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('Gals-Light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('Gals-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('Gals-Light.svg') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
 @font-face {
@@ -92,7 +89,9 @@ header {
 .description {
     margin: 40px 15%;
     font-size: 20px;
-    font-family: "Gals";
+    font-family: 'Gals-Light';
+    
+    
 }
 
 .btn {
@@ -128,7 +127,7 @@ header {
     font-size: 20px;
     padding: 10px 20px;
     border-radius: 20px;
-    font-family: 'Gals';
+    font-family: 'Gals-Light'
 }
 
 .button2:hover {
@@ -157,7 +156,7 @@ header {
     }
     .description {
         margin: 40px 0%;
-        font-size: 16px;
+        font-size: 14px;
         
     }
     .button2 {
@@ -186,7 +185,7 @@ header {
 
     .description {
         margin: 20px 0%;
-        font-size: 16px;
+        font-size: 14px;
         
     }
 
@@ -253,7 +252,21 @@ header {
 }
 
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    .btn {
+        top: 50%;
+        padding: 10px 20px;
+        font-size: 24px;  
+    }
+
+    .description {
+        margin: 40px 15%;
+        font-size: 20px;
+        font-family: 'Gals-Light';
+        
+        
+    }
+}
 
 
 @media screen and (min-width: 1200px) {}
